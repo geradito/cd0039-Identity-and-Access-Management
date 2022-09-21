@@ -33,13 +33,20 @@ pip install -r requirements.txt
 
 - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension we'll use to handle cross-origin requests from our frontend server.
 
+### AUTH0 security keys
+This backend requires auth0 api keys to autheticate and authorise users. In order for this to work create a .env file in the `./src` directory with your following auth0 keys.
+
+```
+AUTH0_DOMAIN='your_auth0_domain'
+API_AUDIENCE='your_api_audience_key'
+```
 ### Run the Server
 
 From within the `./src` directory first ensure you are working using your created virtual environment.
 
 To run the server, execute:
 
-```bash
+```
 flask run --reload
 ```
 
