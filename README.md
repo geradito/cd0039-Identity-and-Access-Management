@@ -45,14 +45,7 @@ flask run --reload
 
 ## Testing
 
-To deploy the tests, run
-
-```bash
-dropdb trivia_test
-createdb trivia_test
-psql trivia_test < trivia.psql
-python test_flaskr.py
-```
+This project includes a postman collection with test cases that can be used to test all the API endpoints.
 
 ## API Reference
 
